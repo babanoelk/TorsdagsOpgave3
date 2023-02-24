@@ -3,7 +3,7 @@
 void setup() {
 
   //1.c Kald metoden fra setup() med argumentet "Den laks skal ned", for at teste den.
-  printIfPalindrome("Den laKs Skal ned");
+  printIfPalindrome("regninger");
 }
 
 /* 1.a - Skriv en metode printlfPalindrome() som tager en tekststreng som argument og printer den hvis den kan skrives bagfra
