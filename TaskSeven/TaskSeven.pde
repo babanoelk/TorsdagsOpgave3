@@ -44,6 +44,21 @@ void takeAnArray(int[] arr) {
   println(arr);
 }
 
+void takeAnArray2(int[] arr) {
+
+  for (int i = 0; i < arr.length; i++) {
+    for (int j = 0; j < arr.length; j++) {
+      if (arr[i] > arr[j]) {
+        arr[i] = arr[j];
+        arr[j] = arr[i];
+      }
+    }
+  }
+  for (int i : arr) {
+    println(arr[i]);
+  }
+}
+
 void setup() {
   ArrayList<Integer> arrayInt      = new ArrayList();
   arrayInt.add(0);
@@ -63,5 +78,6 @@ void setup() {
   //displaySumOfString(arrayString); //Prints all strings in the ArrayList
   //displaySumOfInt(arrayInt); //Prints the sum of the integers
   //displayAverage(arrayInt); //Prints the avaerage number of the integers
-  takeAnArray(newArray1);
+  //takeAnArray(newArray1);
+  takeAnArray2(newArray1);
 }
